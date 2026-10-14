@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+}
+
+body {
+  background-color: rgb(170, 169, 169);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+header h1 {
+  color: rgb(75, 74, 74);
+}
+header .logo {
+  height: 13vh;
+  width: auto;
+  border-radius: 20px;
+}
+header .navegacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .navegacion li {
+  list-style: none;
+  padding: 10px;
+  font-weight: 700;
+}
+@media (max-width: 425px) {
+  header {
+    margin-top: 10px;
+  }
+  header .logo {
+    height: 15vh;
+    width: auto;
+  }
+  header h1 {
+    display: none;
+  }
+  header .navegacion {
+    flex-direction: column;
+  }
+  header .navegacion li {
+    padding: 2px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10px;
+}
+footer .rrss {
+  height: 8vh;
+  width: auto;
+  margin: 0 10px;
+}
+footer .wats {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+}
+@media (max-width: 425px) {
+  footer {
+    flex-direction: column;
+  }
+  footer section {
+    margin: 20px 0;
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.main-nav article {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.main-nav article .router {
+  height: 40vh;
+  width: auto;
+  border-radius: 25px;
+}
+@media (max-width: 425px) {
+  .main-nav {
+    flex-direction: column;
+  }
+}
+
+.home {
+  height: 75vh;
+}
+@media (max-width: 425px) {
+  .home {
+    height: max-content;
+  }
+}
+
+.main-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-contact form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.main-contact form label {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.main-contact form input {
+  height: 5vh;
+  width: 20vw;
+}
+.main-contact form textarea {
+  height: 20vh;
+  width: 20vw;
+}
+.main-contact iframe {
+  justify-self: center;
+  align-self: center;
+}
+@media (max-width: 425px) {
+  .main-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-contact form {
+    margin: 10px 0;
+  }
+  .main-contact form input {
+    width: 80vw;
+  }
+  .main-contact form iframe {
+    margin: 20px 0;
+    height: 40vh;
+    width: 80vw;
+  }
+  .main-contact form textarea {
+    width: 80vw;
+  }
+}
+
+.main-qs {
+  margin: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+.main-qs section h2 {
+  margin-bottom: 50px;
+  justify-self: center;
+  text-decoration: underline;
+}
+.main-qs section p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.main-qs .somos-nosotros {
+  height: 70vh;
+  border-radius: 25px;
+}
+@media (max-width: 425px) {
+  .main-qs {
+    flex-direction: column;
+  }
+  .main-qs section h2 {
+    margin-bottom: 20px;
+  }
+  .main-qs .somos-nosotros {
+    height: 50vh;
+    width: auto;
+  }
+}
+
+.gmain {
+  margin: 50px 0;
+}
+.gmain .galery {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "a51 bangho bangho ip14" "hp hp acer acer" "redmi tmars tmars mtdagger" "moni tnoga thyperx mgenius";
+  gap: 30px 0;
+  justify-content: space-evenly;
+}
+.gmain .galery img {
+  border: 5px solid black;
+  border-radius: 20px;
+}
+.gmain .galery .celu {
+  height: 40vh;
+  width: auto;
+}
+.gmain .galery .note {
+  width: 40vw;
+  height: 40vh;
+}
+.gmain .galery .mouse {
+  height: 40vh;
+  width: 15vw;
+}
+.gmain .galery .teclado {
+  height: 40vh;
+  width: 40vw;
+}
+.gmain .galery .a51 {
+  grid-area: a51;
+}
+.gmain .galery .ip14 {
+  grid-area: ip14;
+}
+.gmain .galery .redmi {
+  grid-area: redmi;
+}
+.gmain .galery .bangho {
+  grid-area: bangho;
+}
+.gmain .galery .hp {
+  grid-area: hp;
+}
+.gmain .galery .acer {
+  grid-area: acer;
+}
+.gmain .galery .thyperx {
+  grid-area: thyperx;
+  width: 25vw;
+}
+.gmain .galery .tmars {
+  grid-area: tmars;
+}
+.gmain .galery .tnoga {
+  grid-area: tnoga;
+  width: 25vw;
+}
+.gmain .galery .mtdagger {
+  grid-area: mtdagger;
+}
+.gmain .galery .moni {
+  grid-area: moni;
+}
+.gmain .galery .mgenius {
+  grid-area: mgenius;
+}
+@media (max-width: 425px) {
+  .gmain .galery {
+    width: 100vw;
+    grid-template-areas: "a51" "ip14" "redmi" "bangho" "hp" "acer" "thyperx" "tmars" "tnoga" "mtdagger" "moni" "mgenius";
+  }
+  .gmain .galery .celu, .gmain .galery .mouse {
+    height: 30vh;
+    width: 40vw;
+  }
+  .gmain .galery .note, .gmain .galery .teclado {
+    height: 30vh;
+    width: 60vw;
+  }
+}
+
+.main-tienda {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.main-tienda h2 {
+  margin: 20px 0;
+}
+.main-tienda .notebooks {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main-tienda .notebooks article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 20px 80px;
+}
+.main-tienda .notebooks article .img-tienda {
+  height: 30vh;
+  width: auto;
+  margin: 25px;
+  border-radius: 15px;
+}
+.main-tienda .perifericos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-tienda .perifericos article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 20px 80px;
+}
+.main-tienda .perifericos article .img-tienda {
+  height: 30vh;
+  width: auto;
+  margin: 25px;
+  border-radius: 15px;
+}
+.main-tienda .celus {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-tienda .celus article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 20px 80px;
+}
+.main-tienda .celus article .img-tienda {
+  height: 30vh;
+  width: auto;
+  margin: 25px;
+  border-radius: 15px;
+}
+@media (max-width: 425px) {
+  .main-tienda {
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
